@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+body {
+  background-image: linear-gradient(60deg, rgb(235, 17, 75), rgb(182, 93, 110));
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Nunito";
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.pigGame {
+  position: absolute;
+  top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card0 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(236, 115, 141);
+  transition: background-color 0.5s ease;
+}
+.card1 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(236, 115, 141);
+  transition: background-color 0.5s ease;
+}
+.playerName0,
+.playerName1 {
+  cursor: pointer;
+}
+.inactive {
+  opacity: 0.3;
+}
+.transition {
+  background-color: aliceblue;
+}
+
+.card0,
+.card1 {
+  height: 400px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.newGameBtn,
+.rollBtn,
+.holdBtn {
+  position: absolute;
+  border-radius: 20px;
+  border: none;
+  height: 35px;
+  background-color: rgba(255, 255, 255, 0.642);
+  box-shadow: 2px 2px 70px rgba(0, 0, 0, 0.364);
+}
+.dice {
+  position: absolute;
+  top: 290px;
+  border: none;
+  height: 65px;
+  box-shadow: 2px 2px 70px rgba(0, 0, 0, 0.364);
+  z-index: 4;
+}
+
+.playerName0,
+.playerName1 {
+  margin-top: -40px;
+  font-family: "Nunito";
+  font-size: 35px;
+}
+.currentHeading0,
+.currentHeading1 {
+  font-family: "Nunito";
+  font-size: 20px;
+}
+.totalScore0,
+.totalScore1 {
+  color: rgb(146, 20, 41);
+  font-size: 40px;
+  margin-top: -4px;
+}
+.newGameBtn {
+  top: 200px;
+  z-index: 1;
+}
+.rollBtn {
+  top: 420px;
+  width: 120px;
+  z-index: 2;
+}
+.holdBtn {
+  top: 470px;
+  z-index: 3;
+}
+.current0,
+.current1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(235, 17, 75);
+  width: 180px;
+  height: fit-content;
+}
+button {
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
